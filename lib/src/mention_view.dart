@@ -414,7 +414,7 @@ class FlutterMentionsState extends State<FlutterMentions> {
     return Container(
       child: PortalEntry(
         portalAnchor: widget.suggestionPosition == SuggestionPosition.Bottom
-            ? Alignment.topCenter
+            ? Alignment.bottomCenter
             : Alignment.bottomCenter,
         childAnchor: widget.suggestionPosition == SuggestionPosition.Bottom
             ? Alignment.bottomCenter
