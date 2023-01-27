@@ -414,10 +414,10 @@ class FlutterMentionsState extends State<FlutterMentions> {
     return Container(
       child: PortalEntry(
         portalAnchor: widget.suggestionPosition == SuggestionPosition.Bottom
-            ? Alignment.bottomCenter
+            ? Alignment(0.0, -1.0)
             : Alignment.bottomCenter,
         childAnchor: widget.suggestionPosition == SuggestionPosition.Bottom
-            ? Alignment.bottomCenter
+            ? Alignment(0.0, -0.8)
             : Alignment.topCenter,
         portal: ValueListenableBuilder(
           valueListenable: showSuggestions,
